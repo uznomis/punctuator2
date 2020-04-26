@@ -98,6 +98,8 @@ if __name__ == "__main__":
     punctuation_vocabulary = net.y_vocabulary
     reverse_word_vocabulary = {v:k for k,v in net.x_vocabulary.items()}
     reverse_punctuation_vocabulary = {v:k for k,v in net.y_vocabulary.items()}
+    
+    print("Build finished.");
 
     with open(sys.stdout.fileno(), 'w', encoding='utf-8', closefd=False) as f_out:
         while True:
